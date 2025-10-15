@@ -1,0 +1,13 @@
+# Dependencies
+node_modules/
+
+# Build artifacts
+dist/
+build/
+coverage/
+
+# Env & local
+.env
+.env.*
+.DS_Store
+*.log

@@ -1,0 +1,11 @@
+POST http://localhost:3001/api/user-finances/intake
+Content-Type: application/json
+
+{
+  "lastPaycheckCents": 180000,
+  "currentBalanceCents": 50000,
+  "savedToGoalCents": 20000,
+  "needsMonthlyCents": 100000,
+  "wantsMonthlyCents": 40000
+}
+
