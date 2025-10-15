@@ -12,3 +12,7 @@ router.post("/intake",
 );
 
 module.exports = router;
+
+const { benchmarkBudget } = require("./userFinances.controller");
+
+router.post("/benchmark", benchmarkBudget);

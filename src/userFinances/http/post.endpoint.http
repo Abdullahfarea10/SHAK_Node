@@ -6,6 +6,40 @@ Content-Type: application/json
   "currentBalanceCents": 50000,
   "savedToGoalCents": 20000,
   "needsMonthlyCents": 100000,
-  "wantsMonthlyCents": 40000
+  "wantsMonthlyCents": 40000,
+  "housingCents": 50000,
+  "foodGroceriesCents": 15000,
+  "transportCents": 10000,
+  "utilitiesCents": 5000,
+  "insuranceHealthCents": 2000,
+  "personalShoppingCents": 3000,
+  "entertainmentEatingOutCents": 4000,
+  "subscriptionsCents": 1500,
+  "miscFunCents": 3500,
+  "emergencyShortTermCents": 12000,
+  "longTermInvestingDebtCents": 10000
 }
 
+
+POST http://localhost:3001/api/user-finances/benchmark
+Content-Type: application/json
+
+
+{
+  "lastPaycheckCents": 200000,
+  "currentBalanceCents": 50000,
+  "savedToGoalCents": 10000,
+  "needsMonthlyCents": 90000,
+  "wantsMonthlyCents": 40000,
+  "housingCents": 55000,
+  "foodGroceriesCents": 16000,
+  "transportCents": 10000,
+  "utilitiesCents": 7000,
+  "insuranceHealthCents": 5000,
+  "personalShoppingCents": 6000,
+  "entertainmentEatingOutCents": 8000,
+  "subscriptionsCents": 3000,
+  "miscFunCents": 7000,
+  "emergencyShortTermCents": 12000,
+  "longTermInvestingDebtCents": 8000
+}

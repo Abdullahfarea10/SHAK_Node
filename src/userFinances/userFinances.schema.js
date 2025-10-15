@@ -9,6 +9,20 @@ const userFinancesSchema = new Schema(
     savedToGoalCents: { type: Number, default: 0, min: 0 },
     needsMonthlyCents: { type: Number, required: true, min: 0 },
     wantsMonthlyCents: { type: Number, required: true, min: 0 },
+    // Needs (fixed) breakdown
+    housingCents: { type: Number, default: 0, min: 0 },
+    foodGroceriesCents: { type: Number, default: 0, min: 0 },
+    transportCents: { type: Number, default: 0, min: 0 },
+    utilitiesCents: { type: Number, default: 0, min: 0 },
+    insuranceHealthCents: { type: Number, default: 0, min: 0 },
+    // Wants (flexible) breakdown
+    personalShoppingCents: { type: Number, default: 0, min: 0 },
+    entertainmentEatingOutCents: { type: Number, default: 0, min: 0 },
+    subscriptionsCents: { type: Number, default: 0, min: 0 },
+    miscFunCents: { type: Number, default: 0, min: 0 },
+    // Savings & Debt Payoff breakdown
+    emergencyShortTermCents: { type: Number, default: 0, min: 0 },
+    longTermInvestingDebtCents: { type: Number, default: 0, min: 0 },
   },
   { timestamps: true, collation: "userFinances" }
 );

@@ -22,3 +22,11 @@ exports.createUserFinances = async (req, res) => {
 
 
 
+// userFinances.controller.js
+const { calculatePercentagesAndBenchmark } = require("./providers/budgetBenchmarks");
+
+exports.benchmarkBudget = (req, res) => {
+  const data = req.body;
+  const report = calculatePercentagesAndBenchmark(data);
+  return res.json(report);
+};
